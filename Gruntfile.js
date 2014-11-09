@@ -30,8 +30,8 @@ module.exports = function (grunt) {
         uglify: {
             default: {
                 files: [
-                    {'build/js/bootstrap.min.js': 'vendor/bootstrap/dist/js/bootstrap.js'},
-                    {'build/js/jquery.min.js': 'vendor/jquery-1.10.2.js'},
+                    {'build/js/bootstrap.min.js': 'node_modules/bootstrap/dist/js/bootstrap.js'},
+                    {'build/js/jquery.min.js': 'node_modules/jquery/dist/jquery.js'},
                     {'build/js/angular.min.js': 'node_modules/angular/lib/angular.js'}
                 ]
             }
