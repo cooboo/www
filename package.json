@@ -15,6 +15,8 @@
     "grunt-contrib-uglify": "^0.6.0"
   },
   "dependencies": {
-    "angular": "^1.2.23"
+    "angular": "^1.2.23",
+    "bootstrap": "^3.3.0",
+    "jquery": "^1.11.1"
   }
 }
