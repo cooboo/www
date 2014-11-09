@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en" data-ng-app="coobooWwwApp">
+<head>
+    <meta charset="utf-8">
+    <title>cooboo.me | conquer your cooking recipes</title>
+    <meta name="description"
+          content="with cooboo.me you can easily create a cookbook of your favorites recipes. We assist you in picking local and seasonal ingredients for your weekly meals.">
+    <meta name="author" content="Tanja and Markus Tacker | http://kamilleblumm.de/ and http://cto.hiv/">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="build/css/styles.css" type="text/css" media="screen">
+    <link href="http://fonts.googleapis.com/css?family=Vollkorn:400,700" rel="stylesheet" type="text/css">
+    <!-- favicons -->
+    <link rel="shortcut icon" href="/build/img/favicon/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/build/img/favicon/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/build/img/favicon/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/build/img/favicon/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/build/img/favicon/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="/build/img/favicon/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/build/img/favicon/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/build/img/favicon/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/build/img/favicon/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="/build/img/favicon/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="/build/img/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="/build/img/favicon/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/build/img/favicon/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="/build/img/favicon/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="cooboo.me | conquer your cooking recipes"/>
+    <meta name="msapplication-TileColor" content="#c83737" />
+    <meta name="msapplication-TileImage" content="/build/img/favicon/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="/build/img/favicon/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="/build/img/favicon/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="/build/img/favicon/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="/build/img/favicon/mstile-310x310.png" />
+</head>
+<body>
+<main>
+    <header>
+        <section>
+            <h1>
+                <img src="build/img/book.png" alt="cooboo.me"><br>
+                cooboo.me
+                <br>
+                <small>conquer your cooking recipes</small>
+            </h1>
+            <p>With cooboo.me you can easily create a cookbook of your favorites recipes.<br>
+                We assist you in picking local and seasonal ingredients for your weekly meals.</p>
+        </section>
+    </header>
+    <article>
+        <section>
+            <form role="form" name="newsletterForm" novalidate method="post"
+                  action="//cooboo.us9.list-manage.com/subscribe/post?u=996d39567d45c86cb609f73ba&amp;id=6e48eaae54">
+                <fieldset>
+                    <legend>Signup for our newsletter</legend>
+                    <p>Are you interested in getting all your favorite recipes neatly organized?</p>
+
+                    <p>Sign up for our newsletter to receive updates and get the chance to for early access to
+                        <em>cooboo</em>!</p>
+
+                    <p>We promise not to give your data to a third party and you can unsubscribe any time.</p>
+
+                    <div class="form-group">
+                        <label for="email">eMail</label>
+                        <input type="email" id="email" required name="EMAIL" maxlength="255"
+                               data-ng-model="newsletter.email">
+                    </div>
+                    <div class="two-form-groups">
+                        <div class="form-group">
+                            <label for="firstname">First name</label>
+                            <input type="text" id="firstname" required name="FNAME" maxlength="255"
+                                   data-ng-model="newsletter.firstname">
+                        </div>
+                        <div class="form-group">
+                            <label for="lastname">Last name</label>
+                            <input type="text" id="lastname" required name="LNAME" maxlength="255"
+                                   data-ng-model="newsletter.lastname">
+                        </div>
+                    </div>
+                    <nav>
+                        <button type="submit" data-ng-disabled="newsletterForm.$invalid">subscribe</button>
+                    </nav>
+                </fieldset>
+            </form>
+        </section>
+        <section>
+            <h2>Follow us</h2>
+
+            <p>
+                cooboo.me on Twitter: <a href="https://twitter.com/cooboo_me" rel="me">@cooboo_me</a>
+            </p>
+
+            <p>
+                cooboo.me on Facebook: <a href="https://www.facebook.com/pages/Cooboo/353067874867916" rel="me">Cooboo</a>
+            </p>
+
+            <p>
+                Tanja on Twitter: <a href="https://twitter.com/kamilleblumm" rel="friend met">@kamilleblumm</a>
+            </p>
+
+            <p>
+                Markus on Twitter: <a href="https://twitter.com/coderbyheart" rel="friend met">@coderbyheart</a>
+            </p>
+        </section>
+    </article>
+</main>
+<script type="text/javascript" src="build/js/jquery.min.js"></script>
+<script type="text/javascript" src="build/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="build/js/angular.min.js"></script>
+<script type="text/javascript">
+    'use strict';
+    angular.module('coobooWwwApp', []);
+</script>
+</body>
+</html>

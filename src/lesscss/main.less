@@ -1,0 +1,56 @@
+main {
+  &:extend(.container all);
+  header {
+    &:extend(.row all);
+    margin: 1em 0;
+    background: rgba(255, 255, 255, 0.85);
+    section {
+      .make-xs-column(12);
+    }
+    text-align: center;
+    h1 {
+      line-height: 0.75em;
+      font-weight: 700;
+    }
+  }
+  article {
+    &:extend(.row all);
+    margin: 1em 0;
+    background: rgba(255, 255, 255, 0.85);
+    section {
+      .make-sm-column(6);
+    }
+    h2 {
+      border-bottom: 1px solid @legend-border-color;
+    }
+  }
+}
+
+form {
+  input {
+    &:extend(.form-control all);
+  }
+  button {
+    &:extend(.btn all);
+    &:extend(.pull-right);
+    &[type=submit] {
+      &:extend(.btn-primary all);
+    }
+  }
+  legend {
+    font-size: @font-size-h2;
+    padding-top: (@line-height-computed / 2);
+    color: @text-color;
+  }
+  div.two-form-groups {
+    div.form-group {
+      width: 49%;
+      &:first-child {
+        float: left;
+      }
+      &:first-child {
+        float: right;
+      }
+    }
+  }
+}
