@@ -1,10 +1,13 @@
 {
   "name": "cooboo-www",
+  "description": "Website for cooboo.me",
   "repository": {
     "type": "git",
     "url": "https://github.com/cooboo/www.git"
   },
+  "license": "UNLICENSED",
   "devDependencies": {
+    "ghooks": "^1.0.3",
     "grunt": "^0.4.5",
     "grunt-cli": "^0.1.13",
     "grunt-contrib-clean": "^0.6.0",
@@ -12,14 +15,20 @@
     "grunt-contrib-cssmin": "^0.10.0",
     "grunt-contrib-less": "^0.11.4",
     "grunt-contrib-uglify": "^0.6.0",
-    "semantic-release": "^4.3.5"
+    "semantic-release": "^4.3.5",
+    "validate-commit-msg": "^2.0.0"
   },
   "dependencies": {
     "angular": "^1.2.23",
     "bootstrap": "^3.3.0",
-    "jquery": "^1.11.1",
+    "jquery": "^1.11.1"
   },
   "scripts": {
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "config": {
+    "ghooks": {
+      "commit-msg": "validate-commit-msg"
+    }
   }
 }
