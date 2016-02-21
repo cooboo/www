@@ -14,7 +14,8 @@ module.exports = function (grunt) {
             default: {
                 files: [
                     {expand: true, cwd: 'src/img/', src: ['*'], dest: 'build/img/'},
-                    {expand: true, cwd: 'src/img/favicon', src: ['*'], dest: 'build/img/favicon'}
+                    {expand: true, cwd: 'src/img/favicon', src: ['*'], dest: 'build/img/favicon'},
+                    {src: 'index.html', dest: 'build/index.html'} 
                 ]
             }
         },
