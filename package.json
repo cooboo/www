@@ -21,7 +21,7 @@
   "dependencies": {
     "angular": "^1.2.23",
     "bootstrap": "^3.3.0",
-    "jquery": "^1.11.1"
+    "jquery": "^2.2.1"
   },
   "scripts": {
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
